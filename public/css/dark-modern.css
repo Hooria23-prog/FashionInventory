@@ -1,0 +1,33 @@
+/* Modern Gradient Dark Theme */
+:root{
+  --bg:#0f1115;
+  --card:#151823;
+  --muted:#9aa4b2;
+  --border:#23283b;
+  --grad: linear-gradient(135deg,#6a11cb 0%, #2575fc 100%);
+}
+html, body{ background:var(--bg); color:#eaeef6; }
+a{ color:#c5d2ff; text-decoration:none; }
+a:hover{ text-decoration:underline; }
+
+.navbar-dark{ background: var(--grad) !important; }
+.sidebar{
+  background: linear-gradient(180deg, rgba(21,24,35,.9), rgba(21,24,35,.6));
+  border-right:1px solid var(--border);
+  min-height:100vh;
+}
+.sidebar .nav-link{ color:#c9d3e0; border-radius:10px; }
+.sidebar .nav-link.active, .sidebar .nav-link:hover{
+  background: rgba(255,255,255,.06);
+  color:#fff;
+}
+
+.card{ background:var(--card); border:1px solid var(--border); border-radius:16px; }
+.card-header{ background:transparent; border-bottom:1px solid var(--border); }
+.table-dark{ --bs-table-bg:#161a25; --bs-table-striped-bg:#1b2030; --bs-table-hover-bg:#1f2638; color:#e4e9f7; }
+.badge{ border-radius:999px; padding:.5rem .75rem; }
+.btn-gradient{ background:var(--grad); color:#fff; border:none; }
+.btn-gradient:hover{ filter:brightness(1.05); }
+.form-control.bg-dark, .form-select.bg-dark{ background:#111420 !important; color:#e4e9f7 !important; border:1px solid var(--border); }
+.alert{ border-radius:12px; }
+.footer{ border-top:1px solid var(--border); background:#0f1115; }
